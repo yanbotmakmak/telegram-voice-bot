@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-voice-bot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: "7643286591:AAEMvq70SCjyhjb6McEWX77rtsXKSnp5O98"
+      - key: OPENAI_API_KEY
+        value: "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"
